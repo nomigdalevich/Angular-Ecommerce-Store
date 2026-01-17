@@ -1,59 +1,58 @@
-# FirstApp
+# Angular E-Commerce Store
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.7.
+Angular-based e-commerce application for browsing, viewing, and managing products. Users can see product lists, view detailed information, and add items to the cart. Data is currently loaded from a local JSON file, with future plans to connect to an external API during the course.
 
-## Development server
+## Features
+- Browse products in a list
+- View detailed information for each product
+- Add products to the shopping cart
+- Admin can manage products (add, edit, delete)
+- Data loaded locally from a JSON file
 
-To start a local development server, run:
+## Technologies
+- Angular
+- TypeScript
+- HTML & CSS
+- RxJS & Signals for state management
+- HttpClient for future API integration
 
-```bash
+## Architecture
+- **AppComponent** – main container with navbar and router-outlet  
+- **HomeComponent** – general homepage content  
+- **ProductListComponent** – displays the list of products  
+- **ProductCardComponent** – individual product card inside the list  
+- **ProductDetailsComponent** – detailed view of a single product  
+- **ProductEditComponent** – reusable form for adding or editing products  
+- **ProductService** – handles data fetching, state management (Signals), and cart count  
+
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/nomigdalevich/YourRepositoryName.git
+```
+
+2. Navigate to the project folder:
+
+cd YourRepositoryName
+
+
+3. Install dependencies:
+
+npm install
+
+
+4. Start the development server:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open http://localhost:4200 in your browser to view the application.
 
-## Code scaffolding
+## Notes
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Currently, the project uses a local JSON file for data.
 
-```bash
-ng generate component component-name
-```
+- Developed individually as part of Full Stack studies.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Designed for learning purposes and showcasing Angular skills.
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Future integration with a backend API using Node.js is planned.
