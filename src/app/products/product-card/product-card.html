@@ -1,0 +1,13 @@
+
+<div class="product-card">
+    <h3>{{name}}</h3>
+    <p class="price">{{price}}</p>
+    <img [src]="img" [alt]="name" style="width: 100%; height: auto; border-radius: 4px;">
+
+<!-- כפתורים -->
+<div class="actions" style="border: none; padding: 0; display: flex; gap: 5px;">
+    <!-- <button (click)="goToDetails(id)">details</button> -->
+    <button (click)="addToCart()">add to cart</button>
+    <button (click)="goToDetails()">details</button>
+</div>
+</div>

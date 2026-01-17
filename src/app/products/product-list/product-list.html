@@ -1,0 +1,9 @@
+
+<div class="productListC">
+    @for (p of arr(); track p){
+
+        <div>
+            <app-product-card [id]="p.id" [name]="p.name" [price]="p.price" [description]="p.description" [img]="p.image"></app-product-card>  
+        </div>
+    }
+</div>

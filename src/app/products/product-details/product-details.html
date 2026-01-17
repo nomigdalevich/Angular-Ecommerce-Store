@@ -1,0 +1,27 @@
+
+<!-- <div>
+   <p>{{name}}</p>
+    <p>{{price}}</p>
+   <p>{{des}}</p>
+   <img [src]="img" [alt]="name">
+
+   <div>
+        <button (click)="toEditProduct()">edit</button>
+        <button (click)="deleteP()">delete</button>
+   </div>
+</div> -->
+
+<div class="details-container">
+   <h2 class="product-title">{{name}}</h2>
+   <p class="product-price">{{price}} ₪</p>
+   <p class="product-description">{{des}}</p>
+   
+   <div class="image-wrapper">
+      <img [src]="img" [alt]="name">
+   </div>
+
+   <div class="actions">
+        <button (click)="toEditProduct()">Edit</button>
+        <button (click)="deleteP()" class="btn-delete">Delete</button>
+   </div>
+</div>

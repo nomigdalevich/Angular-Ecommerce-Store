@@ -1,0 +1,8 @@
+[
+    { "id": 0, "name": "Bugaboo", "price": 1290, "description": "-----", "image": "img/Bugaboo.png" },
+    { "id": 1, "name": "Yoyo", "price": 1350, "description": "-----", "image": "img/Yoyo.png" },
+    { "id": 2, "name": "Silver-Cross", "price": 1250, "description": "-----", "image": "img/Silver-Cross.png" },
+    { "id": 3, "name": "Cybex", "price": 1250, "description": "-----", "image": "img/Cybex.png" },
+    { "id": 4, "name": "UPPAbaby", "price": 1250, "description": "-----", "image": "img/default.png" },
+    { "id": 5, "name": "Stokke", "price": 1250, "description": "-----", "image": "img/default.png" }
+]

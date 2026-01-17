@@ -1,0 +1,142 @@
+/* הגדרות בסיס ומרכוז כללי */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f4f4f7;
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center; /* מרכוז אופקי */
+    min-height: 100vh;
+}
+
+/* מיכל ראשי של האפליקציה */
+app-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ממרכז את כל הקומפוננטות */
+    width: 100%;
+    max-width: 900px;
+    gap: 30px;
+}
+
+/* עיצוב כללי לכל הדיבים המשמשים ככרטיסים/מיכלים */
+div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* עיצוב כותרות וטקסט */
+p, h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* עיצוב טפסים */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px; /* רוחב נוח לטופס */
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: right; /* מתאים לעברית */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+/* עיצוב כפתורים */
+button {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background-color: white;
+    color: #333;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* תמונות */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* מיכל הניווט */
+.navbar-container {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eaeaea;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* סידור הקישורים */
+.main-nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* עיצוב הקישורים */
+.main-nav a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    text-transform: capitalize;
+}
+
+/* אפקט מעבר עכבר וקישור פעיל */
+.main-nav a:hover, 
+.main-nav a.active {
+    color: #000;
+}
+
+/* עיצוב מיוחד לסל הקניות */
+.cart-link {
+    background-color: #f0f0f0;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem !important;
+}
+
+.cart-link span {
+    font-weight: bold;
+    color: #333;
+}

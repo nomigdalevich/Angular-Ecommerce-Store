@@ -1,0 +1,14 @@
+<form [formGroup]="form">
+
+
+    <label>Enater name</label>
+    <input type="text" formControlName="nameP">
+
+    <label>Enater price:</label>
+    <input type="number" formControlName="price">
+
+    <label>Enater description:</label>
+    <input type="text" formControlName="des">
+
+    <button type="submit" (click)="editP()">OK</button>
+</form>

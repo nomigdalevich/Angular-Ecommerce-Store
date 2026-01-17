@@ -1,0 +1,25 @@
+<!-- <div>
+    <nav>
+        <a routerLink="">home</a>
+        |
+        <a routerLink="products">products</a>
+        |
+        <a routerLink="addProduct">add product</a>
+        |
+        <a routerLink="cart">cart : {{countProCart()}}</a>
+    </nav>
+</div>
+
+<router-outlet></router-outlet> -->
+<div class="navbar-container">
+    <nav class="main-nav">
+        <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a routerLink="products" routerLinkActive="active">Products</a>
+        <a routerLink="addProduct" routerLinkActive="active">Add Product</a>
+        <a routerLink="cart" routerLinkActive="active" class="cart-link">
+            Cart <span>({{countProCart()}})</span>
+        </a>
+    </nav>
+</div>
+
+<router-outlet></router-outlet>
