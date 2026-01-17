@@ -28,8 +28,7 @@ Angular-based e-commerce application for browsing, viewing, and managing product
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nomigdalevich/YourRepositoryName.git
-```
+   git clone https://github.com/nomigdalevich/Angular-Ecommerce-Store.git ```
 
 2. Navigate to the project folder:
 
